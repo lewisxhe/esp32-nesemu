@@ -24,10 +24,10 @@
 #include "psxcontroller.h"
 #include "sdkconfig.h"
 
-#define PSX_CLK CONFIG_HW_PSX_CLK
-#define PSX_DAT CONFIG_HW_PSX_DAT
-#define PSX_ATT CONFIG_HW_PSX_ATT
-#define PSX_CMD CONFIG_HW_PSX_CMD
+#define PSX_CLK GPIO_NUM_19		//CONFIG_HW_PSX_CLK
+#define PSX_DAT GPIO_NUM_26		//CONFIG_HW_PSX_DAT
+#define PSX_ATT GPIO_NUM_22		//CONFIG_HW_PSX_ATT
+#define PSX_CMD GPIO_NUM_21		//CONFIG_HW_PSX_CMD
 
 #define DELAY() asm("nop; nop; nop; nop;nop; nop; nop; nop;nop; nop; nop; nop;nop; nop; nop; nop;")
 
